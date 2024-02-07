@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.container {
+    max-width: 80vw;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 67px;
+}
+
+.navbar li {
+    list-style: none;
+    margin: 0 12px;
+}
+
+.topleft {
+    width: 100%;
+    text-align: center;
+}
+
+.topright {
+    width: 100%;
+    text-align: center;
+}
+
+.section1 {
+    color: #711e15;
+}
+
+.dumbellimg {
+    max-width: 100%;
+    height: auto;
+}
+
+.gymimg {
+    max-width: 100%;
+    height: auto;
+}
+
+.section2,
+.section3 {
+    padding: 20px;
+}
+
+.box{
+    padding: 8px 0;
+    margin: 12px 22px;
+    min-width: 20vw;
+    border: 2px solid rgb(120, 54, 16);
+    border-radius: 8px;
+    text-align: center;
+}
+
+.box h2{
+    font-size: 2rem;
+    padding: 15px 0;
+}
+
+.highlighted{
+    font-size: 1.2rem;
+    font-weight: bolder;
+}
+
+.box ul{
+    list-style-type: none;
+}
+
+.box ul li{
+   margin: 12px 2px;
+}
+
+
+.plantable{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section3 table{
+    width: 100%;
+    margin-bottom: 140px;
+    margin-top: 20px;
+    border-collapse: collapse;
+}
+
+.section3 table th{ 
+    width: 23vw; 
+    border-bottom: 2px solid black;
+    padding: 15px 0;
+} 
+
+.section3 table td{   
+    border-bottom: 2px solid black; 
+} 
+.section3 h1{
+    font-size: 2.3rem;
+}
+
+.section3{
+    padding: 73px;
+}
+footer{
+    padding: 23px;
+    text-align: center;
+}
+.buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 12px;
+}
+
+.deal{
+    font-size: 1.2rem;
+    font-weight: bolder;
+    margin: 12px 0;
+}
+
+/* Responsive styles */
+
+@media screen and (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar li {
+        margin: 8px 0;
+    }
+
+    .topleft,
+    .topright {
+        width: 100%;
+        text-align: center;
+    }
+
+    .topright .gymimg {
+        margin-top: 20px;
+    }
+
+    .section2,
+    .section3 {
+        padding: 10px;
+    }
+
+    .box {
+        margin: 10px;
+    }
+
+    .section3 table th,
+    .section3 table td {
+        display: block;
+        width: auto;
+    }
+
+    .section3 table th {
+        text-align: center;
+    }
+
+    .section3 table tbody,
+    .section3 table tr,
+    .section3 table th,
+    .section3 table td {
+        display: block;
+        width: auto;
+        text-align: left;
+    }
+
+    .section3 table thead {
+        display: none;
+    }
+}
+
+
+
+@media screen and (max-width: 768px) {
+    .navbar {
+        flex-direction: row; /* Ensure flex direction is row for small screens */
+        flex-wrap: wrap; /* Allow items to wrap to the next line if necessary */
+        justify-content: center; /* Center align items */
+    }
+
+    .navbar li {
+        margin: 8px; /* Adjust margin for better spacing */
+    }
+
+    .navbar .logo {
+        margin-right: auto; /* Push logo to the left */
+    }
+}
