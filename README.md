@@ -10,7 +10,10 @@ To run this,
 - Clone above repository in any folder 
 - open that folder in VSCode 
 - run 'index.html' file in any browser
-And you can see the output of above code. 
+And you can see the output of above code.
+
+## Output:
+<img src="./output.jpeg" />
 
 ## Feedback
 
